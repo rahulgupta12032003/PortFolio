@@ -1,0 +1,130 @@
+.techstack{
+    background-color: white;
+    z-index: 4;
+
+}
+.techstack-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.techstack-heading>h1{
+    text-align: center;
+    margin: 50px;
+    font-weight: 600;
+}
+.techstack-heading2>h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.techstack-frontend{
+    background-color:#0F1624;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    padding: 30px;
+    margin: auto;
+    width: 95%;
+    text-align: center;
+    color: white;
+}
+
+.techstack-backend{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #0F1624;
+    border-radius: 20px;
+    /* width: 45%; */
+    gap: 30px;
+    color: white;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.techstack-frontend{
+    margin-bottom: 30px;
+}
+.techstack-frontend img, .techstack-backend img{
+    width: 120px;
+    padding: 3px;
+    margin: 8px;
+    border-radius: 4px;
+    background-color: aliceblue;
+
+}
+.techstack-frontend img:hover, .techstack-backend img:hover{
+    transform: scale(1.1);
+    transition: 1s ease-out;
+}
+/* .techstack-backend{
+} */
+@media screen and (max-width:820px) {
+   .techstack-frontend, .techstack-backend{
+    width: 100%;   
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+
+} 
+}
+
+@media screen and (max-width:420px) {
+    .techstack-frontend, .techstack-backend{
+     width: 100%;   
+     display: grid;
+     grid-template-columns: repeat(1,200px);
+     grid-template-rows: repeat(12,1fr)
+    } 
+
+    .techstack-backend{
+        width: 100%;   
+        display: grid;
+        grid-template-columns: repeat(1,200px);
+        grid-template-rows: repeat(3,1fr);
+    } 
+    .techstack-backend > div{
+        margin-left: 27%;
+    }
+    .techstack-frontend > div{
+        margin-left: 22%;
+    }
+    
+ }
+
+/* @media screen and (min-width:375px) and (max-width:667px){
+    .techstack-frontend, .techstack-backend{
+       
+        display: grid;
+        grid-template: repeat(2,100px);
+        grid-template-rows: repeat(8,1fr);
+    
+    } 
+} */
+
+/* @media screen and (max-width:415px) {
+    .techstack-frontend, .techstack-backend{
+     width: 100%;   
+     display: grid;
+     padding: 0px;
+     grid-template-columns: repeat(2,200px);
+     grid-template-rows: repeat(6,1fr)
+    } 
+
+    .techstack-backend{
+        width: 100%;   
+        display: grid;
+        grid-template-columns: repeat(2,200px);
+        grid-template-rows: repeat(2,1fr);
+    } 
+    .techstack-backend > div{
+        /* margin-left: 27%; */
+  /*  }
+    .techstack-frontend > div{
+        /* margin-left: 22%; */
+    /* }
+    
+ }  */
+    
